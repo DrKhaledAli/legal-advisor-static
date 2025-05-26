@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستشارك القانوني بالذكاء الاصطناعي - التدريب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts for Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>مستشارك القانوني بالذكاء الاصطناعي</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">المحادثة</a></li>
+                <li><a href="training.html" class="active">التدريب</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="training-container">
+            <h2>تدريب النموذج بمصادر قانونية</h2>
+            <p class="training-intro">
+                يمكنك تدريب المستشار القانوني بإضافة مصادر قانونية من مواقع الويب أو ملفات PDF.
+                هذا سيساعد في تحسين دقة الإجابات المتعلقة بالمجالات القانونية المختلفة.
+            </p>
+
+            <div class="training-section">
+                <h3>إضافة محتوى من موقع ويب</h3>
+                <div class="training-input-group">
+                    <label for="url-input">رابط الموقع:</label>
+                    <input type="url" id="url-input" placeholder="أدخل رابط الموقع القانوني">
+                    <button id="add-url-button" class="training-button">إضافة المحتوى</button>
+                </div>
+            </div>
+
+            <div class="training-section">
+                <h3>إضافة محتوى من ملف PDF</h3>
+                <div class="training-input-group">
+                    <label for="pdf-upload">ملف PDF:</label>
+                    <input type="file" id="pdf-upload" accept=".pdf">
+                    <button id="upload-pdf-button" class="training-button">رفع الملف</button>
+                </div>
+            </div>
+
+            <div id="training-status" class="training-status" style="display: none;">
+                <p id="status-message"></p>
+                <div class="loading-spinner" id="loading-spinner" style="display: none;"></div>
+            </div>
+
+            <div class="sources-section">
+                <div class="sources-header">
+                    <h3>المصادر المضافة</h3>
+                    <button id="clear-sources" class="clear-button" style="display: none;">مسح الكل</button>
+                </div>
+                
+                <ul id="sources-list" class="sources-list">
+                    <!-- Sources will be added here by JavaScript -->
+                </ul>
+                
+                <p id="no-sources" class="no-sources">لم يتم إضافة أي مصادر بعد</p>
+            </div>
+
+            <div class="training-info">
+                <h3>ملاحظات هامة</h3>
+                <ul>
+                    <li>يتم تحليل المحتوى المضاف واستخراج المعلومات القانونية منه تلقائياً</li>
+                    <li>يفضل إضافة مصادر موثوقة ورسمية للحصول على أفضل النتائج</li>
+                    <li>يمكن إضافة عدة مصادر لتغطية مجالات قانونية متنوعة</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>يرجى ملاحظة أن هذه استشارة مقدمة بواسطة الذكاء الاصطناعي ولا تغني عن استشارة محامٍ متخصص.</p>
+        <p>&copy; 2025 مستشارك القانوني بالذكاء الاصطناعي</p>
+    </footer>
+
+    <script src="js/training.js"></script>
+</body>
+</html>

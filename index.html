@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستشارك القانوني بالذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts for Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>مستشارك القانوني بالذكاء الاصطناعي</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">المحادثة</a></li>
+                <li><a href="training.html">التدريب</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be added here by JavaScript -->
+            </div>
+            
+            <div class="chat-input">
+                <textarea id="user-input" placeholder="اكتب سؤالك القانوني هنا..." rows="1"></textarea>
+                <button id="send-button">إرسال</button>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h3>أمثلة على الأسئلة</h3>
+                <ul class="example-questions">
+                    <li class="example-question">ما هي الخطوات القانونية لتأسيس شركة في مصر؟</li>
+                    <li class="example-question">ما هي حقوقي كمستأجر في القانون المصري؟</li>
+                    <li class="example-question">ما هي إجراءات الطلاق في مصر؟</li>
+                    <li class="example-question">كيف أسجل علامة تجارية في مصر؟</li>
+                </ul>
+            </div>
+            
+            <button id="clear-chat">مسح المحادثة</button>
+            
+            <div class="disclaimer">
+                <p>تنبيه: هذه الإجابات لأغراض إرشادية فقط ولا تعتبر استشارة قانونية رسمية.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>يرجى ملاحظة أن هذه استشارة مقدمة بواسطة الذكاء الاصطناعي ولا تغني عن استشارة محامٍ متخصص.</p>
+        <p>&copy; 2025 مستشارك القانوني بالذكاء الاصطناعي</p>
+    </footer>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>
